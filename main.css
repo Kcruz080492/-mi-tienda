@@ -137,7 +137,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--white);
 }
 
 .hero-content {
@@ -186,7 +186,7 @@
 
 .promotions {
     background: #f1f1f1;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem 1.5rem;
 }
 
 .container {
@@ -223,7 +223,7 @@
 }
 
 .promo-card {
-    background-color: white;
+    background-color: var(--white);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -332,8 +332,9 @@
 }
 
 .featured-categories {
-    padding: 5rem 2rem;
-    background: var(--white);
+    padding: 2rem 2rem;
+    border-style: 1px rgba(0, 0, 0, 0.1);
+
 }
 
 .categories-grid {
@@ -345,7 +346,10 @@
 .category-card {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, var(--neutral-light) 0%, var(--white) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #f9dede, #fbe9e9);
+    /*background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 35%);*/
+    /*background: linear-gradient(135deg, var(--neutral-light) 0%, var(--white) 100%);*/
     border-radius: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -499,6 +503,20 @@
     font-size: 0.9rem;
     margin: 0;
 }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 1s ease-out;
+        }
 
 @media (max-width: 600px) {
     .logo img {
