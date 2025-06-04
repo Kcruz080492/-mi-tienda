@@ -52,9 +52,9 @@
 
     <nav class="navbar">
         <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="/ofertas.html">Ofertas</a></li>
-            <li><a href="#">Novedades</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="novedades.html">Novedades</a></li>
         </ul>
     </nav>
 
@@ -215,7 +215,19 @@
         </section>
     </div>
 
-    <!--</main> -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>¡No te Pierdas Nada!</h2>
+            <p>Suscríbete a nuestro newsletter y recibe las mejores ofertas y novedades directamente en tu email</p>
+
+            <form class="newsletter-form" onsubmit="handleSubscription(event)">
+                <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+                <button type="submit">Suscribirse</button>
+            </form>
+
+            <div id="subscription-message" style="margin-top: 1rem; font-weight: 600;"></div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -224,42 +236,43 @@
                 <form class="subscribe-form">
                     <input type="email" placeholder="e-mail" required>
                     <button type="submit">Suscribirme</button>
-                <p><strong>2298-3777</strong></p>
-                <p>Mantente en contacto con nosotros</p>
-                <ul class="social-media">
-                    <li>
-                        <a href="#" aria-label="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="m16 11.37-.63-.78a.8.8 0 0 0-1.25-.15l-2.24 1.8a.8.8 0 0 0-.15 1.25l.78.63">
-                                </path>
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <circle cx="17.5" cy="6.5" r="1.5"></circle>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-                                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                    <p><strong>2298-3777</strong></p>
+                    <p>Mantente en contacto con nosotros</p>
+                    <ul class="social-media">
+                        <li>
+                            <a href="#" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path
+                                        d="m16 11.37-.63-.78a.8.8 0 0 0-1.25-.15l-2.24 1.8a.8.8 0 0 0-.15 1.25l.78.63">
+                                    </path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
             </div>
 
             <div class="footer-section">
