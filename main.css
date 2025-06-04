@@ -677,16 +677,17 @@
     }
  .logo {
     display: flex;
-    justify-content: left;
-    width: auto;
+    justify-content: center;
+    width: 100%;
     height: auto;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .logo img {
     max-width: 100%;
     height: auto;
-    width: 12rem;
+    width: 8rem;
+    /* Tamaño más pequeño en pantallas móviles */
     object-fit: contain;
 }
 }
