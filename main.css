@@ -686,7 +686,7 @@
 .logo img {
     max-width: 100%;
     height: auto;
-    width: 10rem;
+    width: 12rem;
     /* Tamaño más pequeño en pantallas móviles */
     object-fit: contain;
 }
