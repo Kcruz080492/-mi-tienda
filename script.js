@@ -11,27 +11,11 @@ function handleSubscription(event) {
         return;
     }
     
-    // Simular envío (aquí integrarías con tu backend)
-    messageDiv.innerHTML = '<span style="color: #51cf66;">¡Gracias por suscribirte! Recibirás nuestras mejores ofertas.</span>';
+    // Simular envío de datos
+    messageDiv.innerHTML = '<span style="color: #ffffff;">¡Gracias por suscribirte! Recibirás nuestras mejores ofertas.</span>';
     
     // Limpiar formulario
     form.reset();
     
-    // Opcional: Enviar a analytics
-    // gtag('event', 'newsletter_signup', { email: email });
 }
 
-// Mejorar la experiencia de búsqueda
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.querySelector('.search-bar input');
-    
-    if (searchInput) {
-        searchInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-                // Aquí implementarías la funcionalidad de búsqueda
-                console.log('Buscando:', this.value);
-            }
-        });
-    }
-});
